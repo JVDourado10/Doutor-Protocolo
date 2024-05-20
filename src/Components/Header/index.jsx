@@ -31,6 +31,12 @@ const Conteudo = styled.div`
 
   & img {
     margin-bottom: 40px;
+    display: block;
+
+    @media (max-width: 400px) {
+      scale: 0.8;
+      margin-bottom: 20px;
+    }
   }
 `
 
@@ -41,12 +47,35 @@ const Video = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 1000px) {
+    width: 80%;
+    height: 300px;
+  }
+
+  @media (max-width: 700px) {
+    width: 80%;
+    height: 200px;
+  }
+
+  @media (max-width: 500px) {
+    width: 80%;
+    height: 140px;
+  }
 `
 
 const Subtitulo = styled.h2`
   & span {
     background-color: #C31616;
     margin-right: 8px;
+  }
+
+  @media (max-width: 720px) {
+    font-size: 20px;
+    text-align: center;
+  }
+  @media (max-width: 400px) {
+    font-size: 18px;
   }
 `
 
@@ -55,6 +84,13 @@ const Titulo = styled.h1`
   color: #1ec21e;
   padding: 0 8px;
   font-size: 40px;
+
+  @media (max-width: 720px) {
+    font-size: 20px;
+  }
+  @media (max-width: 400px) {
+    font-size: 18px;
+  }
 `
 
 const Textos = styled.div`

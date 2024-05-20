@@ -15,6 +15,18 @@ const ButtonStyle = styled.a`
     scale: 1.05;
     transition: .3s;
   }
+
+  @media (max-width: 800px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 450px) {
+    font-size: 14px;
+  }
 `
 // eslint-disable-next-line react/prop-types
 const Button = ({children, ...props}) => {
