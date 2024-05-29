@@ -21,32 +21,43 @@ const Background = styled.img`
 
 const Conteudo = styled.div`
   padding: 40px 0;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   justify-items: center;
   align-items: center;
   color: white;
   gap: 40px;
   position: relative;
   z-index: 1000;
+  width: 100%;
+  
+
 
   & img {
     margin-bottom: 40px;
     display: block;
 
     @media (max-width: 400px) {
-      scale: 0.8;
-      margin-bottom: 20px;
+      scale: 0.7;
+      margin-bottom: 0px;
     }
   }
+
+  @media (max-width: 400px) {
+      gap: 20px;
+    }
+
 `
 
-const Video = styled.div`
+export const Video = styled.div`
   background-color: gray;
   width: 800px;
   height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
+  text-align: center;
 
   @media (max-width: 1000px) {
     width: 80%;

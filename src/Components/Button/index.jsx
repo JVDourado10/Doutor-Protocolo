@@ -25,7 +25,9 @@ const ButtonStyle = styled.a`
   }
 
   @media (max-width: 450px) {
-    font-size: 14px;
+    font-size: 13px;
+    padding: 8px 8px;
+
   }
 `
 // eslint-disable-next-line react/prop-types

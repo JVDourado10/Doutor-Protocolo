@@ -1,4 +1,5 @@
 import Header from "./Components/Header"
+import Section1 from "./Components/Section1"
 import './styles/main.css'
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
   return (
     <>
       <Header />
+      <Section1 />
     </>
   )
 }
