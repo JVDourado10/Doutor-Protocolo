@@ -1,15 +1,16 @@
-import Header from "./Components/Header"
-import Section1 from "./Components/Section1"
-import './styles/main.css'
+import Header from "./Components/Header";
+import SectionInfos from "./Components/SectionInfos";
+import SectionDetalhes from "./Components/SectionDetalhes";
+import "./styles/main.css";
 
 function App() {
-
   return (
     <>
       <Header />
-      <Section1 />
+      <SectionInfos />
+      <SectionDetalhes />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

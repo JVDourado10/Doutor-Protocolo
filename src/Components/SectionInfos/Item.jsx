@@ -1,6 +1,7 @@
-import React from "react";
 import styled from "styled-components";
 import check from "../../assets/check-mark.png";
+import { Texto } from "../Tipografia/Tipografia";
+
 
 const ConteudoItem = styled.li`
   display: flex;
@@ -12,25 +13,14 @@ const ConteudoItem = styled.li`
     display: inline-block;
     height: 30px;
   }
+`
 
-  & p {
-    font-size: 1.5rem;
-    max-width: 73ch;
-
-    @media (max-width: 1024px) {
-      font-size: 1.25rem;
-    }
-    @media (max-width: 769px) {
-      font-size: 0.825rem;
-    }
-  }
-`;
-
+// eslint-disable-next-line react/prop-types
 const Item = ({ children }) => {
   return (
     <ConteudoItem>
       <img src={check} />
-      <p>{children}</p>
+      <Texto>{children}</Texto>
     </ConteudoItem>
   );
 };

@@ -2,6 +2,7 @@ import styled from "styled-components"
 import SVG from '../../assets/marca.svg'
 import Button from "../Button"
 import background from '../../assets/background-header.jpg'
+import { Subtitulo, Preco } from "../Tipografia/Tipografia"
 
 const Cabecalho = styled.header`
   background-color: black;
@@ -75,34 +76,7 @@ export const Video = styled.div`
   }
 `
 
-const Subtitulo = styled.h2`
-  & span {
-    background-color: #C31616;
-    margin-right: 8px;
-  }
 
-  @media (max-width: 720px) {
-    font-size: 20px;
-    text-align: center;
-  }
-  @media (max-width: 400px) {
-    font-size: 18px;
-  }
-`
-
-const Titulo = styled.h1`
-  background-color: #011801;
-  color: #1ec21e;
-  padding: 0 8px;
-  font-size: 40px;
-
-  @media (max-width: 720px) {
-    font-size: 20px;
-  }
-  @media (max-width: 400px) {
-    font-size: 18px;
-  }
-`
 
 const Textos = styled.div`
   display: grid;
@@ -120,7 +94,7 @@ const Header = () => {
         <Subtitulo><span>Facetas Cerâmicas: </span>Protocolo Passo a Passo</Subtitulo>
         <Video> UM VIDEO AQUI</Video>
         <Textos>
-          <Titulo>12x de R$ 59,99</Titulo>
+          <Preco>12x de R$ 59,99</Preco>
           <Subtitulo>ou R$ 600,00 à vista</Subtitulo>
         </Textos>
         <Button>QUERO LIBERAR MEU ACESSO AGORA</Button>

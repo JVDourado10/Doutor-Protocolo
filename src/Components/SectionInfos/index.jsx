@@ -1,31 +1,16 @@
-import React from "react";
 import { Video } from "../Header";
 import Item from "./Item";
-import styled from "styled-components";
-
-const Conteudo = styled.div`
-  display: grid;
-  justify-items: center;
-  gap: 80px;
-  padding: 60px 0;
-
-  @media (max-width: 769px) {
-    gap: 40px;
-  }
-
-  @media (max-width: 400px) {
-    gap: 20px;
-  }
-`;
+import { Conteudo } from "../Containers";
+import { RobotoTitle } from "../Tipografia/Tipografia";
 
 const Section1 = () => {
   return (
     <section className="container">
       <Conteudo>
-        <h2 className="robotoTitle">
+        <RobotoTitle>
           Esse curso é ideal para o dentista que deseja protocolo simples e
           replicável que permita:
-        </h2>
+        </RobotoTitle>
         <Video style={{ color: "white" }}>IMAGEM COM AMOSTRAS DAS AULAS</Video>
         <div>
           <ul>
