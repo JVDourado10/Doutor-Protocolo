@@ -5,6 +5,7 @@ export const Conteudo = styled.div`
   justify-items: center;
   gap: 60px;
   padding: 60px 0;
+  position: relative;
 
   @media (max-width: 769px) {
     gap: 40px;

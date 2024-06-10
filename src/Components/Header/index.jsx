@@ -9,7 +9,7 @@ const Cabecalho = styled.header`
   position: relative;
 `
 
-const Background = styled.img`
+export const Background = styled.img`
   display: block;
   width: 100%;
   height: 100%;
